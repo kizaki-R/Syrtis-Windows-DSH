@@ -83,6 +83,8 @@ public static class ClientRegistry
         // (macOS ClientRegistry.swift:76-78).
         ["senpi"] = ("Senpi", "#2f6f63"),
         ["omp"] = ("Oh My Pi", "#d946ef"),
+        // Vendor-local (magmod): DeepSeek Harness local session snapshots.
+        ["dsh"] = ("DeepSeek Harness", "#0f766e"),
     };
 
     /// <summary>Every registered client id, sorted. Demo fixtures use this
