@@ -61,6 +61,9 @@ public static class AgentIcons
         // senpi.png is a dark mark on a canvas that is 66.9% transparent
         // (measured), the same shape as cline and hermes.
         ["senpi"] = "#ffffff",
+        // dsh.png is a black whale mark on transparent (37.5% visible);
+        // same shape as senpi: needs a white disc behind it.
+        ["dsh"] = "#ffffff",
     };
 
     // AgentIconView.swift:50-52 — full marks whose art reaches the edge of
