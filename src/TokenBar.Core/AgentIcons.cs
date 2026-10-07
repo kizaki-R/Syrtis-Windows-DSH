@@ -38,6 +38,8 @@ public static class AgentIcons
         // and upstream assets; hindsight and omp cropped from the vendors'
         // banners), all full-colour.
         "zcode", "augment", "hindsight", "muse", "reasonix", "kimchi", "senpi", "omp",
+        // Vendor-local (magmod): DSH whale mark, full-colour.
+        "dsh",
     ];
 
     // AgentIconView.swift:29-33 — clients that share another client's icon.
