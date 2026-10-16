@@ -1,0 +1,218 @@
+{
+  "models": {
+    "deepseek-v4-flash-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.006,
+      "input_cost_per_million_tokens": 0.3,
+      "notes": "free-tier shadow price, not real spend. Harness cache_write is 0 so no creation rate.",
+      "output_cost_per_million_tokens": 1.2,
+      "source": "litellm deepseek-v4-flash (bare)"
+    },
+    "glm-4.7-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.12,
+      "input_cost_per_million_tokens": 0.6,
+      "notes": "free-tier shadow price, not real spend. input/output from zai.glm-4.7, cache_read from baseten/zai-org/GLM-4.7.",
+      "output_cost_per_million_tokens": 2.2,
+      "source": "litellm zai.glm-4.7 + baseten/zai-org/GLM-4.7"
+    },
+    "glm-5-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.12,
+      "input_cost_per_million_tokens": 0.6,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 1.92,
+      "source": "litellm openrouter/z-ai/glm-5"
+    },
+    "hy3-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.033,
+      "input_cost_per_million_tokens": 0.132,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 0.528,
+      "source": "litellm openrouter/tencent/hy3"
+    },
+    "hy3-preview-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.033,
+      "input_cost_per_million_tokens": 0.132,
+      "notes": "free-tier shadow price, not real spend. Proxy: no separate preview paid listing, same hy3 rate.",
+      "output_cost_per_million_tokens": 0.528,
+      "source": "litellm openrouter/tencent/hy3 (proxy)"
+    },
+    "jev-1.13-free": {
+      "input_cost_per_million_tokens": 0.042,
+      "notes": "free-tier shadow price, not real spend. Upstream lists output 0.0 so output/cache omitted: output tokens stay unpriced (Partial coverage).",
+      "source": "litellm openrouter/typesafe/jev-1.13 (input only)"
+    },
+    "kimi-k2.5-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.07,
+      "input_cost_per_million_tokens": 0.45,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 2.25,
+      "source": "litellm openrouter/moonshotai/kimi-k2.5"
+    },
+    "laguna-s-2.1-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.009,
+      "input_cost_per_million_tokens": 0.09,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 0.18,
+      "source": "litellm openrouter/poolside/laguna-s-2.1"
+    },
+    "ling-2.6-flash-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.012,
+      "input_cost_per_million_tokens": 0.06,
+      "notes": "free-tier shadow price, not real spend. Proxy: no 2.6 paid listing, same Ling 3.0 Flash paid rate.",
+      "output_cost_per_million_tokens": 0.18,
+      "source": "litellm novita/inclusionai/ling-3.0-flash (proxy)"
+    },
+    "ling-3.0-flash-fin-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.0084,
+      "input_cost_per_million_tokens": 0.042,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 0.1232,
+      "source": "litellm openrouter/inclusionai/ling-3.0-flash-fin"
+    },
+    "ling-3.0-flash-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.012,
+      "input_cost_per_million_tokens": 0.06,
+      "notes": "free-tier shadow price, not real spend. Proxy of paid Ling 3.0 Flash.",
+      "output_cost_per_million_tokens": 0.18,
+      "source": "litellm novita/inclusionai/ling-3.0-flash (proxy)"
+    },
+    "ling-3.0-tiny-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.012,
+      "input_cost_per_million_tokens": 0.06,
+      "notes": "free-tier shadow price, not real spend. Proxy: no tiny paid listing, same Ling 3.0 Flash paid rate.",
+      "output_cost_per_million_tokens": 0.18,
+      "source": "litellm novita/inclusionai/ling-3.0-flash (proxy)"
+    },
+    "ling-3.1-flash-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.012,
+      "input_cost_per_million_tokens": 0.06,
+      "notes": "free-tier shadow price, not real spend. Proxy: litellm ling-3.1-flash rows are all 0.0, so paid Ling 3.0 Flash rate.",
+      "output_cost_per_million_tokens": 0.18,
+      "source": "litellm novita/inclusionai/ling-3.0-flash (proxy)"
+    },
+    "longcat-2.0-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.006,
+      "input_cost_per_million_tokens": 0.3,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 1.2,
+      "source": "litellm openrouter/meituan/longcat-2.0"
+    },
+    "longcat-2.5-preview-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.006,
+      "input_cost_per_million_tokens": 0.3,
+      "notes": "free-tier shadow price, not real spend. Proxy: no 2.5 paid listing in litellm cache, same 2.0 rate.",
+      "output_cost_per_million_tokens": 1.2,
+      "source": "litellm openrouter/meituan/longcat-2.0 (proxy)"
+    },
+    "mimo-v2-flash-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.01,
+      "input_cost_per_million_tokens": 0.1,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 0.3,
+      "source": "litellm openrouter/xiaomi/mimo-v2-flash"
+    },
+    "mimo-v2-omni-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.088,
+      "input_cost_per_million_tokens": 0.44,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 2.2,
+      "source": "litellm aihubmix/mimo-v2-omni"
+    },
+    "mimo-v2-pro-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.22,
+      "input_cost_per_million_tokens": 1.1,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 3.3,
+      "source": "litellm aihubmix/mimo-v2-pro"
+    },
+    "mimo-v2.5-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.0028,
+      "input_cost_per_million_tokens": 0.14,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 0.28,
+      "source": "litellm openrouter/xiaomi/mimo-v2.5"
+    },
+    "mimo-v2.6-flash-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.0028,
+      "input_cost_per_million_tokens": 0.14,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 0.28,
+      "source": "litellm openrouter/xiaomi/mimo-v2.6-flash"
+    },
+    "minimax-m2.1-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.03,
+      "input_cost_per_million_tokens": 0.3,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 1.2,
+      "source": "litellm openrouter/minimax/minimax-m2.1"
+    },
+    "minimax-m2.5-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.027,
+      "input_cost_per_million_tokens": 0.27,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 1.08,
+      "source": "litellm openrouter/minimax/minimax-m2.5"
+    },
+    "minimax-m3-free": {
+      "input_cost_per_million_tokens": 0.288,
+      "notes": "free-tier shadow price, not real spend. Upstream publishes no cache_read rate so cache stays unpriced (Partial coverage).",
+      "output_cost_per_million_tokens": 1.152,
+      "source": "litellm aihubmix/minimax-m3"
+    },
+    "muse-spark-1.2-contributor-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.15,
+      "input_cost_per_million_tokens": 1.25,
+      "notes": "free-tier shadow price, not real spend. Same rate as paid muse-spark-1.2.",
+      "output_cost_per_million_tokens": 4.25,
+      "source": "litellm meta/muse-spark-1.2"
+    },
+    "muse-spark-1.3-contributor-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.15,
+      "input_cost_per_million_tokens": 1.25,
+      "notes": "free-tier shadow price, not real spend. Same rate as paid muse-spark-1.3.",
+      "output_cost_per_million_tokens": 4.25,
+      "source": "litellm meta/muse-spark-1.3"
+    },
+    "nemotron-3-super-free": {
+      "input_cost_per_million_tokens": 0.3,
+      "notes": "free-tier shadow price, not real spend. Upstream publishes no cache_read rate so cache stays unpriced (Partial coverage).",
+      "output_cost_per_million_tokens": 0.9,
+      "source": "litellm nebius/nvidia/nemotron-3-super-120b-a12b"
+    },
+    "nemotron-3-ultra-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.1,
+      "input_cost_per_million_tokens": 0.5,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 2.2,
+      "source": "litellm openrouter/nvidia/nemotron-3-ultra-550b-a55b"
+    },
+    "nemotron-3.5-lightning-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.02975,
+      "input_cost_per_million_tokens": 0.0595,
+      "notes": "free-tier shadow price, not real spend.",
+      "output_cost_per_million_tokens": 0.17,
+      "source": "litellm openrouter/nvidia/nemotron-3.5-lightning"
+    },
+    "qwen3.6-plus-free": {
+      "input_cost_per_million_tokens": 0.325,
+      "input_cost_per_million_tokens_above_256k_tokens": 1.3,
+      "notes": "free-tier shadow price, not real spend. Upstream publishes no cache_read rate so cache stays unpriced (Partial coverage).",
+      "output_cost_per_million_tokens": 1.95,
+      "output_cost_per_million_tokens_above_256k_tokens": 3.9,
+      "source": "litellm openrouter/qwen/qwen3.6-plus"
+    },
+    "trinity-large-preview-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.06,
+      "input_cost_per_million_tokens": 0.25,
+      "notes": "free-tier shadow price, not real spend. Proxy: no preview paid listing, same trinity-large-thinking rate.",
+      "output_cost_per_million_tokens": 0.8,
+      "source": "litellm openrouter/arcee-ai/trinity-large-thinking (proxy)"
+    },
+    "x-preview-f-free": {
+      "cache_read_input_token_cost_per_million_tokens": 0.1268,
+      "input_cost_per_million_tokens": 1.268,
+      "notes": "free-tier shadow price, not real spend. Proxy: ambiguous X model, same qwen3.6-max-preview rate.",
+      "output_cost_per_million_tokens": 7.608,
+      "source": "litellm aihubmix/qwen3.6-max-preview (proxy)"
+    }
+  }
+}
